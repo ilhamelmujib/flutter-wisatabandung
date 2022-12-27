@@ -58,8 +58,8 @@ class _DetailWebPageState extends State<DetailWebPage> {
                       child: Column(
                         children: [
                           ClipRRect(
-                            child: Image.asset(widget.place.imageAsset),
                             borderRadius: BorderRadius.circular(10),
+                            child: Image.asset(widget.place.imageAsset),
                           ),
                           const SizedBox(height: 16),
                           Scrollbar(
@@ -92,14 +92,12 @@ class _DetailWebPageState extends State<DetailWebPage> {
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
-                              Container(
-                                child: Text(
-                                  widget.place.name,
-                                  textAlign: TextAlign.center,
-                                  style: const TextStyle(
-                                    fontSize: 30.0,
-                                    fontFamily: 'Staatliches',
-                                  ),
+                              Text(
+                                widget.place.name,
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(
+                                  fontSize: 30.0,
+                                  fontFamily: 'Staatliches',
                                 ),
                               ),
                               Row(
